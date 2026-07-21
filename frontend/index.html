@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Receptionist Pro | SaaS Platform</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-logo">AI RECEPTIONIST PRO</div>
+        <div class="nav-links-wrapper">
+            <ul class="nav-links">
+                <li><a href="#" onclick="switchView('home-view')">Platform Home</a></li>
+                <li><a href="#" onclick="switchView('services-view')">AI Capabilities</a></li>
+                <li><a href="#" onclick="switchView('contact-view')">Developer & Plans</a></li>
+                <li><a href="#" onclick="switchView('admin-view')" style="color: #dfbc73;"><i class="fa-solid fa-lock"></i> Client Login</a></li>
+            </ul>
+        </div>
+        <button class="btn-primary nav-cta-btn" onclick="toggleChat()">Talk to AI</button>
+    </nav>
+
+    <!-- ==========================================
+         VIEW 1: PLATFORM HOME (Universal Showcase)
+         ========================================== -->
+    <div id="home-view" class="view-section active-view">
+        <section class="hero-section">
+            <div class="hero-content">
+                <span class="hero-sub" style="color: #dfbc73; letter-spacing: 2px;">UNIVERSAL AI RECEPTIONIST SAAS</span>
+                <h1>One Brain. Multiple Industries.</h1>
+                <p>A single, highly intelligent AI platform designed to adapt to any business. It doesn't just chat—it books appointments, captures leads, and executes industry-specific workflows seamlessly.</p>
+                
+                <h3 style="color: #dfbc73; margin-top: 30px; margin-bottom: 15px; font-family: 'Poppins', sans-serif; font-size: 1.1rem;">Industries We Automate:</h3>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; text-align: left; background: rgba(0,0,0,0.5); padding: 20px; border-radius: 8px; border: 1px solid rgba(191,161,95,0.2);">
+                    <div>
+                        <strong style="color: #fff;"><i class="fa-solid fa-hotel" style="color: #dfbc73;"></i> Luxury Hotels</strong>
+                        <p style="font-size: 0.85rem; color: #aaa; margin-top: 5px;">Room bookings, 24/7 room service orders, and banquet inquiries.</p>
+                    </div>
+                    <div>
+                        <strong style="color: #fff;"><i class="fa-solid fa-map-location-dot" style="color: #dfbc73;"></i> Travel & Tours</strong>
+                        <p style="font-size: 0.85rem; color: #aaa; margin-top: 5px;">Custom itineraries, seasonal packages (e.g., Chachakota Monsoons).</p>
+                    </div>
+                    <div>
+                        <strong style="color: #fff;"><i class="fa-solid fa-tooth" style="color: #dfbc73;"></i> Dental Clinics</strong>
+                        <p style="font-size: 0.85rem; color: #aaa; margin-top: 5px;">Patient symptom checking, slot booking, and FAQ resolution.</p>
+                    </div>
+                    <div>
+                        <strong style="color: #fff;"><i class="fa-solid fa-utensils" style="color: #dfbc73;"></i> Restaurants</strong>
+                        <p style="font-size: 0.85rem; color: #aaa; margin-top: 5px;">Table reservations, digital menu browsing, and order taking.</p>
+                    </div>
+                </div>
+
+                <div class="hero-btns" style="margin-top: 30px;">
+                    <button class="btn-primary" onclick="switchView('services-view')">See Business Demo</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- ==========================================
+         VIEW 2: AI CAPABILITIES (Dynamic per Business)
+         ========================================== -->
+    <div id="services-view" class="view-section">
+        <section class="grid-section" style="padding-top: 150px; min-height: 100vh;">
+            <div class="section-title">
+                <span id="ui-service-sub">DYNAMIC MODULES</span>
+                <h2 id="ui-service-title">Loading AI Modules...</h2>
+                <p style="color: #aaa; margin-top: 10px;">This page changes based on the business profile loaded. Click a quick action to test the AI.</p>
+            </div>
+            
+            <div class="quick-action-grid" id="ui-quick-actions">
+                <!-- JS will inject dynamic quick action buttons here -->
+                <p style="text-align: center; width: 100%; color: #888;">Fetching specific business capabilities...</p>
+            </div>
+        </section>
+    </div>
+
+    <!-- ==========================================
+         VIEW 3: DEVELOPER & PLANS (Universal)
+         ========================================== -->
+    <div id="contact-view" class="view-section">
+        <section class="grid-section" style="padding-top: 130px; min-height: 100vh;">
+            <div class="section-title">
+                <span>SCALABLE SAAS ARCHITECTURE</span>
+                <h2>Developer Info & Pricing Plans</h2>
+            </div>
+            
+            <div class="pricing-grid">
+                <!-- Developer Card -->
+                <div class="pricing-card" style="text-align: left;">
+                    <h3 style="color: #dfbc73;">Developer Contact</h3>
+                    <p style="color: #fff; font-size: 1rem; margin-top: 15px; font-weight: bold;">Hardik Sharma</p>
+                    <p style="color: #aaa; font-size: 0.9rem;"><i class="fa-solid fa-envelope"></i> admin@aireceptionist.pro</p>
+                    <p style="color: #aaa; font-size: 0.9rem;"><i class="fa-solid fa-phone"></i> +91 98765 43210</p>
+                    
+                    <hr style="border-color: rgba(255,255,255,0.05); margin: 20px 0;">
+                    
+                    <h4 style="color: #dfbc73; margin-bottom: 10px;">Future Roadmap v2.0 & v3.0</h4>
+                    <ul style="color: #aaa; font-size: 0.85rem; line-height: 1.8; padding-left: 15px;">
+                        <li><strong>WhatsApp / Meta API:</strong> Instant booking confirmations sent directly to user's phone.</li>
+                        <li><strong>Multi-language Audio:</strong> AI talking natively in Hindi, Spanish, and French.</li>
+                        <li><strong>Live CRM Sync:</strong> Export captured leads directly to Salesforce or HubSpot.</li>
+                        <li><strong>Analytics Dashboard:</strong> Track which services users ask for the most.</li>
+                    </ul>
+                </div>
+
+                <!-- Basic Plan -->
+                <div class="pricing-card">
+                    <h3>Starter Business</h3>
+                    <div class="price">$29<span style="font-size: 1rem; color: #aaa;">/mo</span></div>
+                    <ul style="text-align: left; color: #aaa; font-size: 0.9rem; line-height: 2; list-style: none; padding: 0;">
+                        <li><i class="fa-solid fa-check" style="color: #dfbc73; margin-right: 10px;"></i> Up to 500 AI Chats</li>
+                        <li><i class="fa-solid fa-check" style="color: #dfbc73; margin-right: 10px;"></i> Basic Text Receptionist</li>
+                        <li><i class="fa-solid fa-check" style="color: #dfbc73; margin-right: 10px;"></i> Single Business Profile</li>
+                    </ul>
+                </div>
+
+                <!-- Premium Plan -->
+                <div class="pricing-card premium">
+                    <h3>Enterprise AI Engine</h3>
+                    <div class="price">$99<span style="font-size: 1rem; color: #aaa;">/mo</span></div>
+                    <ul style="text-align: left; color: #aaa; font-size: 0.9rem; line-height: 2; margin-bottom: 30px; list-style: none; padding: 0;">
+                        <li><i class="fa-solid fa-star" style="color: #dfbc73; margin-right: 10px;"></i> Unlimited AI Chats</li>
+                        <li><i class="fa-solid fa-star" style="color: #dfbc73; margin-right: 10px;"></i> Advanced Voice Integration</li>
+                        <li><i class="fa-solid fa-star" style="color: #dfbc73; margin-right: 10px;"></i> Lead Dashboard Access</li>
+                        <li><i class="fa-solid fa-star" style="color: #dfbc73; margin-right: 10px;"></i> Multi-Industry Profiles</li>
+                    </ul>
+                    <button class="btn-primary" style="width: 100%;">Contact Sales</button>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- ==========================================
+         VIEW 4: SECURE CLIENT DASHBOARD
+         ========================================== -->
+    <div id="admin-view" class="view-section">
+        <section class="grid-section" style="padding-top: 130px; min-height: 100vh;">
+            
+            <!-- Login Box (Pehle ye dikhega) -->
+            <div id="admin-login-section">
+                <div class="admin-login-box">
+                    <i class="fa-solid fa-user-tie" style="font-size: 3rem; color: #dfbc73; margin-bottom: 15px;"></i>
+                    <h2 style="color: #fff; margin-bottom: 25px;">Client Portal</h2>
+                    <input type="password" id="admin-password" placeholder="Enter Business PIN">
+                    <button class="btn-primary" onclick="verifyAdmin()" style="width: 100%;">Access Dashboard</button>
+                    <p id="login-error" style="color: #ff4444; margin-top: 15px; display: none; font-size: 0.9rem;">Incorrect PIN. Access Denied.</p>
+                </div>
+            </div>
+
+            <!-- Dashboard Content (Password dalne ke baad ye dikhega) -->
+            <div id="admin-dashboard-section" style="display: none;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px;">
+                    <div>
+                        <span style="color: #dfbc73; letter-spacing: 2px; font-size: 0.85rem; font-weight: 600;">CONFIDENTIAL DATA</span>
+                        <h2 style="font-family: 'Cormorant Garamond', serif; font-size: 2.5rem; color: #fff;">Live Leads Engine</h2>
+                    </div>
+                    <button class="btn-secondary" onclick="logoutAdmin()">Logout</button>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <h3 style="color: #aaa; font-size: 1rem; margin:0;">Total Leads Captured</h3>
+                        <p id="total-leads-count">0</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3 style="color: #aaa; font-size: 1rem; margin:0;">AI Conversion Rate</h3>
+                        <p>84%</p>
+                    </div>
+                </div>
+
+                <div class="admin-table-container">
+                    <table class="admin-table">
+                        <thead>
+                            <tr>
+                                <th>Date & Time</th>
+                                <th>Business Source</th>
+                                <th>Customer Name</th>
+                                <th>Phone Number</th>
+                                <th>Inquiry Purpose</th>
+                            </tr>
+                        </thead>
+                        <tbody id="leads-table-body">
+                            <tr><td colspan="5" style="text-align: center; color: #888;">Fetching latest intelligence...</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </section>
+    </div>
+
+    <!-- Master AI Chat Widget -->
+    <div class="chat-widget-wrapper">
+        <button class="chat-trigger-btn" onclick="toggleChat()">
+            <i class="fa-solid fa-robot"></i> <span id="chat-btn-name">AI Concierge</span>
+        </button>
+
+        <div class="chat-container hidden" id="chat-container">
+            <div class="chat-header">
+                <div class="header-info">
+                    <div class="avatar"><i class="fa-solid fa-bolt"></i></div>
+                    <div>
+                        <h3 id="chat-header-name">AI Concierge</h3>
+                        <span class="status">Online | Powered by GenAI</span>
+                    </div>
+                </div>
+                <button class="close-btn" onclick="toggleChat()">&times;</button>
+            </div>
+            <div class="chat-box" id="chat-box">
+                <div class="message bot-message" id="ui-chat-greeting">Connecting to backend server...</div>
+            </div>
+            
+            <!-- FIXED INPUT AREA -->
+            <div class="input-area">
+                <button id="mic-btn" onclick="startVoiceInput()" style="background: #333; color: #fff; border:none; width: 45px; height: 45px; border-radius: 6px; cursor: pointer;"><i class="fa-solid fa-microphone"></i></button>
+                <input type="text" id="user-input" placeholder="Type or speak..." onkeypress="handleKeyPress(event)" style="flex: 1; padding: 10px; border-radius: 6px; background: #282828; border: 1px solid rgba(255,255,255,0.1); color: white;">
+                <button onclick="sendMessage()" style="background: #dfbc73; color: #111; border:none; width: 45px; height: 45px; border-radius: 6px; cursor: pointer;"><i class="fa-solid fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/configLoader.js"></script>
+    <script src="./js/core.js"></script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaaS Admin Dashboard | AI Receptionist</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            background-color: #111;
+            color: #fff;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .admin-header {
+            background-color: #1a1a1a;
+            padding: 20px 5%;
+            border-bottom: 1px solid rgba(191,161,95,0.2);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .admin-header h1 {
+            color: #bfa15f;
+            font-size: 1.5rem;
+            margin: 0;
+        }
+        .container {
+            padding: 40px 5%;
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        .stat-card {
+            background: #222;
+            border: 1px solid rgba(191,161,95,0.2);
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .stat-card h3 {
+            margin: 0;
+            color: #aaa;
+            font-size: 1rem;
+        }
+        .stat-card p {
+            margin: 10px 0 0 0;
+            font-size: 2rem;
+            color: #dfbc73;
+            font-weight: 600;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #1a1a1a;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        th, td {
+            padding: 15px 20px;
+            text-align: left;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+        th {
+            background-color: #222;
+            color: #bfa15f;
+            font-weight: 600;
+        }
+        tr:hover {
+            background-color: rgba(191,161,95,0.05);
+        }
+        .profile-badge {
+            background: rgba(191,161,95,0.1);
+            color: #dfbc73;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="admin-header">
+        <h1><i class="fa-solid fa-chart-line"></i> SaaS Central Dashboard</h1>
+        <button style="background: #bfa15f; border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer; font-weight: bold;">Export CSV</button>
+    </div>
+
+    <div class="container">
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h3>Total Leads Generated</h3>
+                <p id="total-leads">0</p>
+            </div>
+            <div class="stat-card">
+                <h3>Active Businesses</h3>
+                <p>2</p>
+            </div>
+            <div class="stat-card">
+                <h3>AI Conversion Rate</h3>
+                <p>84%</p>
+            </div>
+        </div>
+
+        <h2 style="color: #bfa15f; margin-bottom: 20px;">Recent Captured Leads</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Date & Time</th>
+                    <th>Business Source</th>
+                    <th>Customer Name</th>
+                    <th>Phone Number</th>
+                    <th>Inquiry Purpose</th>
+                </tr>
+            </thead>
+            <tbody id="leads-table-body">
+                <tr>
+                    <td colspan="5" style="text-align: center; color: #888;">Fetching latest intelligence...</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="./js/admin.js"></script>
+</body>
+</html>

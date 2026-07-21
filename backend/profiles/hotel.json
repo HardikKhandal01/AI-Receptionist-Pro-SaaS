@@ -1,0 +1,15 @@
+{
+    "business_id": "hotel",
+    "business_name": "The Grand Heritage Resort",
+    "business_type": "Luxury Hotel & Banquet",
+    "tone": "highly hospitable, professional, and regal (subtly using respectful Indian terms like 'Namaste')",
+    "contact_phone": "+91 95876 62000",
+    "contact_email": "management@grandheritageresort.com",
+    "location": "Premium Highway Access Zone, Luxury Hub",
+    "services": {
+        "The Maharaja Executive Suite": "₹4,500 per night. King-size premium bedding, private lounge, butler service.",
+        "The Royal Heritage Banquet & Lawn": "Dynamic pricing. For high-end destination marriages and corporate galas."
+    },
+    "policies": "Guaranteed lowest room rates on direct booking, complimentary elite room upgrades upon availability, zero cancellation platform fees.",
+    "greeting_message": "Namaste! Welcome to The Grand Heritage Resort. I can instantly assist you with luxury suite bookings or check event slot dates. How can I serve you today?"
+}

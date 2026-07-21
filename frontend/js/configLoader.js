@@ -2,7 +2,7 @@ const CURRENT_PROFILE = "hotel"; // 'hotel' ya 'chachakota_tours'
 
 async function loadBusinessProfile() {
     try {
-        const response = await fetch(`http://127.0.0.1:8000/api/profile/${CURRENT_PROFILE}`);
+        const response = await fetch(`https://ai-receptionist-backend-v88j.onrender.com${CURRENT_PROFILE}`);
         if (!response.ok) throw new Error("Backend not responding");
         
         const data = await response.json();

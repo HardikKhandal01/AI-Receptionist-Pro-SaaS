@@ -67,7 +67,7 @@ window.sendMessage = async function() {
     chatBox.scrollTop = chatBox.scrollHeight;
 
     try {
-        const response = await fetch("http://127.0.0.1:8000/api/chat", {
+        const response = await fetch("https://ai-receptionist-backend-v88j.onrender.com", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ message: message, profile_name: CURRENT_PROFILE }) 
@@ -163,7 +163,7 @@ window.logoutAdmin = function() {
 
 async function fetchLeadsFromBackend() {
     try {
-        const response = await fetch("http://127.0.0.1:8000/api/admin/leads");
+        const response = await fetch("https://ai-receptionist-backend-v88j.onrender.com");
         if (!response.ok) throw new Error("Network response was not ok");
         
         const leads = await response.json();

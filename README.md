@@ -10,10 +10,10 @@ AI Receptionist Pro is a highly scalable, multi-tenant SaaS platform designed to
 
 *(Note: Replace these placeholder paths with actual image links once uploaded to GitHub)*
 
-*   **Platform Home (Universal Hub):** `![Platform Home](assets/home-page (3).png)`
-*   **AI Capabilities (Dynamic Quick Actions):** `![Capabilities](assets/capabilities-page.png)`
-*   **Developer Info & Plans:** `![Pricing](assets/pricing-page.png)`
-*   **Live AI Chat & Lead Engine:** `![Chatbox](assets/chatbox.png)`
+*   **Platform Home (Universal Hub):** ![Platform Home](assets/home-page (3).png)`
+*   **AI Capabilities (Dynamic Quick Actions):** ![Capabilities](assets/capabilities-page.png)`
+*   **Developer Info & Plans:** ![Pricing](assets/pricing-page.png)`
+*   **Live AI Chat & Lead Engine:** ![Chatbox](assets/chatbox.png)`
 
 ---
 

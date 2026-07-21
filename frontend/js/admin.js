@@ -1,6 +1,6 @@
 async function fetchLeads() {
     try {
-        const response = await fetch("https://ai-receptionist-backend-v88j.onrender.com");
+        const response = await fetch("https://ai-receptionist-backend-v88j.onrender.com/api/admin/leads");
         if (!response.ok) throw new Error("Network response was not ok");
         
         const leads = await response.json();
